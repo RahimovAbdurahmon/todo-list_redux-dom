@@ -70,7 +70,7 @@ const todoList = createSlice({
       state.todos.map((elem) => {
         if (elem.id == state.idx) {
           elem.name = state.inpEdit;
-          elem.isComplete = state.selEdit == "Active" ? true : false;
+          elem.isComplete = state.selEdit == "active" ? true : false;
         }
         return elem;
       });
